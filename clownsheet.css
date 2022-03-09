@@ -15,6 +15,10 @@ footer p{
     color:rgb(78, 71, 71);
 }
 
+#textOnWhite {
+    color: black;
+}
+
 aside h3,h5,p{
     padding-top: 10px;
     color: white;
