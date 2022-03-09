@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="clownsheet.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+              
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4">Creepy Clownz Circus</span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="clownInfo.html" class="nav-link">Meet Our Clowns</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="bonus.html" class="nav-link">Bonus Page</a></li>
+              </ul>
+            </header>
+          </div>
+        <!-- HEADER END -->
+
+        <!-- MAIN CONTENT -->
+        <div class="container">
+            <img src="killerclowns.jpg" alt="Killer Clowns Image" class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" height="95%" width="95%">
+          
+          <div class = "row">
+              <main class="col-8">
+                <h2>Welcome to Creepy Clownz</h2>
+                <p>We are the best upcoming completely unintentionally creepy circus, and we are running with it. Come along if you'd like a fright, or perhaps would like to traumatise your local Coulrophobe.</p>
+                <p>Find below for the price table. Remember, the material cost is superficial, the true cost of a Creepy Clownz Show is priceless.</p>
+
+                <h4>Check out this trapeze video!</h4>
+                <p>You could call it a taste of the extravaganza you'll witness at the Creepy Clownz show proper.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vEti9zBVs4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <br>
+                <input class="btn btn-primary" type="button" onclick="jumpscare();" value="..whats this?">
+                <img id="jumpscare" src="puppet.jpg">
+                <audio id="scream" src="jumpscareAudio.mp3">
+                <script>
+                  function jumpscare(){
+                    var jumpscare = document.getElementById("jumpscare");
+                    jumpscare.style.visibility="visible";
+                    var audio = document.getElementById("scream");
+                      audio.play();
+                  }
+                </script>
+              </main>
+
+              <aside class="col-4">
+                <div id="aside">
+                  <h3>Sidebar of Amusement</h3>
+                  <h5>How to Juggle</h5>
+                  <p>Steps provided by wikihow.com</p>
+                  <div id="list">
+                    <ul class="list-group">
+                      <li class="list-group-item">First hold two balls in right hand and one in left-hand</li>
+                      <li class="list-group-item">Begin with passing from the right hand</li>
+                      <li class="list-group-item">Throw the ball to your left hand and when ball 1 is at the peak, throw ball 2 (the only one in your left hand) under ball 1 to your right hand.</li>
+                      <li class="list-group-item">When ball 2 is at the highest point (at this point, you should also catch ball 1 in the left hand) throw ball 3 under ball 2.</li>
+                      <li class="list-group-item">And when ball 2 is in the right hand just catch ball 3 and this should be it. That's all you do! Repeat away. </li>
+                    </ul>
+                  </div>
+                  <br>
+                    <a class="btn btn-primary" href="https://twitter.com/CircusStarr" role="button">Visit our Terrifying Twitter!</a>
+                </div>
+              </aside>
+          </div>
+
+          <audio autoplay>
+            <source src="circusnightcore.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio> 
+
+          <footer>
+            <p>Audio from https://www.fesliyanstudios.com</p>
+          </footer>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Bonus Page</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="clownsheet.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4">Creepy Clownz Circus</span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="clownInfo.html" class="nav-link">Meet Our Clowns</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="bonus.html" class="nav-link">Bonus Page</a></li>
+              </ul>
+            </header>
+          </div>
+        <!-- HEADER END -->
+
+        <!-- MAIN CONTENT -->
+        <div class="container">
+
+            <input class="btn btn-primary" type="button" onclick="jumpscare();" value="..whats this?">
+            <img id="jumpscare" src="puppet.jpg">
+            <audio id="scream" src="jumpscareAudio.mp3">
+            <script>
+              function jumpscare(){
+                var jumpscare = document.getElementById("jumpscare");
+                jumpscare.style.visibility="visible";
+                var audio = document.getElementById("scream");
+                  audio.play();
+              }
+            </script>
+
+          <audio autoplay>
+            <source src="circusnightcore.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio> 
+
+          <footer>
+          </footer>
+
+        </div>
+    </body>
+</html>
